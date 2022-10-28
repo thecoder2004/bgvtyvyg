@@ -1,14 +1,12 @@
-let express = require('express');
-let app = express();
-let ejs = require('ejs');
-const haikus = require('./haikus.json');
-const port = process.env.PORT || 3000;
+#include <iostream>
+using namespace std;
 
-app.use(express.static('public'))
-app.set('view engine', 'ejs');
-
-app.get('/', (req, res) => {
-  res.render('index', {haikus: haikus});
-});
-
-app.listen(port);
+int main() {
+  int a;int b;
+  cin >>a;cin>>b;
+  for (int n=a;n<=b;n++)
+  {for (int i=2;i<=b;i++) {
+    if (n%i != 0){cout << n;}else {break;}
+  }
+  }
+  }
